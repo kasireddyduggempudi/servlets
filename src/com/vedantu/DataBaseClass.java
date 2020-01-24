@@ -5,7 +5,7 @@ public class DataBaseClass {
 	
 	String url = "jdbc:mysql://localhost:3306/servletDatabase";
 	String user = "root";
-	String dbPassword = "12345678";
+	String dbPassword = "password";
 
 	public boolean checkLogin(String username, String password){
 		String query = "select * from users where user_name = ? and password = ?";
