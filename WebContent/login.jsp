@@ -9,6 +9,8 @@
 <%
 //checking if already logged in
 // response, request, session, out =>implicit objects
+// to remove cache
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 	if(session.getAttribute("user_name") != null){
 		response.sendRedirect("home.jsp");
 	}
